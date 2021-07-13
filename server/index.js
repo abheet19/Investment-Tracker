@@ -16,6 +16,9 @@ app.use(cors());
 
 app.use('/posts',postRoutes);
 
+app.get('/',(req,res) => {
+  res.send('Hello to Investment Tracker API')
+});
 
 //const CONNECTION_URL = 'mongodb+srv://abheet19:iitjee2017@cluster0.4ikk5.mongodb.net/MERN';
 
